@@ -1,0 +1,6 @@
+<div class="root">
+    <div class="bar" id="barContainer" #barContainer>
+        <div class="dragable" id="dragable" #dragable (pointerdown)=" startDrag($event)"
+            (pointerup)="$event.stopPropagation();endDrag()"></div>
+    </div>
+</div>

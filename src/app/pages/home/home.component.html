@@ -1,0 +1,11 @@
+<div class="root">
+    <app-pill-take></app-pill-take>
+    <app-pill-last-taken class="last-pill-taken" *ngIf="somePillTaked"></app-pill-last-taken>
+    <button mat-stroked-button (click)="toggleAllPills()" *ngIf="somePillTaked">{{!allPillsVisible ? "Ver todas" :
+        "Ocultar"}}</button>
+    <app-pill-all-taken *ngIf="allPillsVisible"></app-pill-all-taken>
+
+    <footer>
+        Made with 💜 for Bae by @zaldih
+    </footer>
+</div>
