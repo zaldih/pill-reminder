@@ -21,4 +21,11 @@ export class HomeComponent implements OnInit {
   get somePillTaked(): boolean {
     return !!this.pillsService.getLastPill();
   }
+
+  get lastPillTakenRecently() {
+    const twoDays = 48 * 60 * 60 * 1000;
+    const lastPill = this.pillsService.getLastPill();
+    if (!lastPill) return false;
+    return lastPill.timestamp + twoDays > new Date().getTime();
+  }
 }
