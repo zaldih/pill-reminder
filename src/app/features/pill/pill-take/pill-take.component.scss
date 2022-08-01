@@ -4,22 +4,35 @@
 
 .bar {
   position: relative;
-  border: 1px solid gray;
+  border: 1px solid #d8d8d8;
   text-align: left;
   width: 250px;
   margin: auto;
   border-radius: 20px;
+  overflow: hidden;
+
+  background: rgb(143, 159, 214);
+  background: linear-gradient(
+    90deg,
+    rgba(143, 159, 214, 0) 70%,
+    rgba(187, 100, 100, 0.4) 90%,
+    rgba(43, 184, 159, 0) 93%
+  );
+  background-size: 200% 100%;
+  animation: bar-gradient 3s ease infinite;
 }
 
 .dragable {
   width: 50px;
   height: 50px;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 20px; /* Animated via Script */
+
   margin-bottom: -5px;
   touch-action: none;
+  position: relative;
 
-  background-color: rgb(200, 25, 25);
+  background-color: #bb6464;
   transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
@@ -28,5 +41,41 @@
   &.active {
     box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
       0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  &:before {
+    content: ".";
+    background-color: #632626;
+    width: 600px;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    z-index: -1;
+  }
+}
+
+.animation-pill {
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  right: 25px;
+  background: white;
+  background: linear-gradient(90deg, #ffffff 65%, #000000 65%);
+
+  border-radius: 20px 0 0 20px;
+  z-index: -1;
+}
+
+.slider-bg {
+}
+
+@keyframes bar-gradient {
+  0% {
+    background-position: 200% 50%;
+  }
+  100% {
+    background-position: 30% 50%;
   }
 }

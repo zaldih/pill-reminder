@@ -1,6 +1,9 @@
 <div class="root">
     <div class="bar" id="barContainer" #barContainer>
+        <div class="slider-bg"></div>
         <div class="dragable" id="dragable" #dragable (pointerdown)=" startDrag($event)"
-            (pointerup)="$event.stopPropagation();endDrag()"></div>
+            (pointerup)="$event.stopPropagation();endDrag()">
+            <div class="animation-pill" id="animationPill" #animationPill></div>
+        </div>
     </div>
 </div>

@@ -12,6 +12,7 @@ export class PillTakeComponent implements OnInit {
   isDraging = false;
   private positionXClickStart = 0;
   private dragElement: HTMLElement | null = null;
+  private animationPill: HTMLElement | null = null;
   private barContainer: HTMLElement | null = null;
 
   @HostListener('mousemove', ['$event'])
@@ -29,12 +30,14 @@ export class PillTakeComponent implements OnInit {
 
   ngOnInit(): void {
     const dragElement = document.getElementById('dragable');
+    const animationPill = document.getElementById('animationPill');
     const barContainer = document.getElementById('barContainer');
     if (!dragElement || !barContainer) {
       console.error('Cannot find element for drag by id');
       return;
     }
     this.dragElement = dragElement;
+    this.animationPill = animationPill;
     this.barContainer = barContainer;
     this.onKeyframe();
   }
@@ -95,10 +98,18 @@ export class PillTakeComponent implements OnInit {
   }
 
   private onKeyframe() {
-    if (!this.isDraging && this.dragElement) {
+    if (!this.dragElement || !this.animationPill) return;
+
+    if (!this.isDraging && this.positionX > 0.8) {
       this.positionX = this.lerp(this.positionX, 0, 0.15);
       this.dragElement.style.marginLeft = this.positionX + 'px';
     }
+
+    // La forma termina con X = 160;
+    const borderRadius = 20 - this.positionX / 8;
+    this.dragElement.style.borderRadius = `${borderRadius}px 20px 20px ${borderRadius}px`;
+
+    this.animationPill.style.width = this.positionX / 2 - 12 + 'px';
 
     window.requestAnimationFrame(() => this.onKeyframe());
   }
