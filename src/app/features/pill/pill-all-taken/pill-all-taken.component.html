@@ -1,12 +1,13 @@
 <div class="root">
-    <div class="container">
-        <div class="pill" *ngFor="let pill of pills">
-            <div>
-                {{ pill.timestamp| date: 'dd/mm/yy | HH:mm' }}
-                <button mat-flat-button (click)="removePill(pill)">
-                    <mat-icon style="color: red;">delete</mat-icon>
-                </button>
-            </div>
-        </div>
+  <div class="container">
+    <div class="pill" *ngFor="let pill of pills">
+      <div>
+        {{ pill.timestamp | date: "dd/MM/yyyy | HH:mm" }}
+        <button mat-flat-button (click)="removePill(pill)">
+          <mat-icon style="color: red">delete</mat-icon>
+        </button>
+      </div>
     </div>
+  </div>
 </div>
+
