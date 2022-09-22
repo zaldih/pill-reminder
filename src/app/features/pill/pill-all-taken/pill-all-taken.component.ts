@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Pill } from '../pill.model';
 
-import { Pill } from '../interface/pill.interface';
 import { PillsService } from '../pills.service';
 
 @Component({

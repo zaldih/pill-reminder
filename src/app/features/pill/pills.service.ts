@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Pill } from './interface/pill.interface';
+import { Pill } from './pill.model';
 
 const PILLS_STORAGE_KEY = 'pills';
 
@@ -14,10 +14,7 @@ export class PillsService {
   }
 
   takePill() {
-    const pill: Pill = {
-      timestamp: new Date().getTime(),
-      shouldRemove: false,
-    };
+    const pill: Pill = new Pill();
     this.pillsTaked.unshift(pill);
     this.savePills();
   }
