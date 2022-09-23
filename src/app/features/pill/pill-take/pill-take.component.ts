@@ -92,6 +92,10 @@ export class PillTakeComponent implements OnInit {
     } */
   }
 
+  get pillConfig() {
+    return this.pillsService.pillConfig;
+  }
+
   private slideCompleted() {
     this.endDrag();
     this.pillsService.takePill();

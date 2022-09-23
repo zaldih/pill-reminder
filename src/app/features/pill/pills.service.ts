@@ -7,6 +7,10 @@ const PILLS_STORAGE_KEY = 'pills';
   providedIn: 'root',
 })
 export class PillsService {
+  pillConfig = {
+    /** In hours*/
+    takeFrequencyHours: 8,
+  };
   private pillsTaked: Pill[] = [];
 
   constructor() {
@@ -14,7 +18,7 @@ export class PillsService {
   }
 
   takePill() {
-    const pill: Pill = new Pill();
+    const pill: Pill = new Pill(this.pillConfig);
     this.pillsTaked.unshift(pill);
     this.savePills();
   }

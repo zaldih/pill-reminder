@@ -6,10 +6,10 @@ export class Pill {
   nextTake: number;
   comment: string;
 
-  constructor() {
+  constructor(config = { takeFrequencyHours: 8 }) {
     this.timestamp = new Date().getTime();
     this.name = 'default';
-    this.takeFrequency = 28800000; // 8 hours
+    this.takeFrequency = config.takeFrequencyHours * 60 * 60 * 1000; // Default 8 hours
     this.nextTake = this.timestamp + this.takeFrequency;
     this.comment = '';
   }
