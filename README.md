@@ -1,27 +1,35 @@
-# PillReminder
+<!-- # <img src="docs/icon.svg" height="125px"/> Pill reminder -->
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
+# <img src="docs/banner.svg" height="125px" alt="Pill Reminder logo"/>
 
-## Development server
+Pill Reminder se trata de una aplicación web simple y minimalista que te permite registrar la última vez que te tomastes una pastilla de una forma simple, efectiva y elegante.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Simplemente necesitas deslizar la pastilla para registrarla. En ese momento quedará guardada en tu navegador y cada vez que vuelvas a abrir la APP verás el tiempo transcurrido.
 
-## Code scaffolding
+También puedes consultar a que hora podrás tomarte la próxima o añadir comentarios adicionales para llevar tu registro.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Features
 
-## Build
+- [x] Registra el momento en el que realizas la toma.
+- [x] Configurar cuanto hay que esperar hasta la siguiente.
+- [x] Añadir comentarios.
+- [x] Compatibilidad movil.
+- [ ] Compatibilidad escritorio.
+- [ ] Notificar cuando haya pasado el tiempo de espera.
+- [ ] Crea varios tipos de medicamentos con su correspondiente configuración.
+- [ ] Control simultaneo de más de una toma.
+- [ ] Mejorar estética.
+- [ ] Menu para consultar histórico.
+- [ ] Permitir exportar e importar los datos guardados.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Como usarla
 
-## Running unit tests
+Básta con acceder al sitio web desde un dispositivo movil.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Es recomentable instalarla mediante **Menu > Añadir a la pantalla de inicio** .
 
-## Running end-to-end tests
+### ¿Dónde se almacenan los datos?
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Por seguridad y privacidad, todos los datos son almacenados en el navegador desde el que se utiliza la APP. En ningún momento estos son enviados a ningún servidor.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Es por ello que es recomendable utilizar acceder desde el mismo dispositivo y navegador.
