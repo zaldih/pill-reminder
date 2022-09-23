@@ -1,16 +1,25 @@
 <div class="root" *ngIf="lastPill" matRipple>
-  <div
-    class="body"
-    [class]="lastPill.canTakeNext() ? 'completed' : 'in-progress'"
-  >
-    <div class="left-side">
-      <div class="title">Última pastilla</div>
-      Tomada a las {{ lastPill.timestamp | date: "HH:mm" }}
-    </div>
-    <div class="time-ago" *ngIf="timeAgo; else loader">
-      Hace <span class="time-ago-counter">{{ timeAgo }}</span>
-    </div>
-  </div>
+  <mat-accordion>
+    <mat-expansion-panel
+      hideToggle
+      aria-disabled="true"
+      class="body"
+      [class]="lastPill.canTakeNext() ? 'completed' : 'in-progress'"
+    >
+      <mat-expansion-panel-header>
+        <div class="left-side">
+          <div class="title">Última pastilla</div>
+          Tomada a las {{ lastPill.timestamp | date: "HH:mm" }}
+        </div>
+        <div class="time-ago" *ngIf="timeAgo; else loader">
+          Hace <span class="time-ago-counter">{{ timeAgo }}</span>
+        </div>
+      </mat-expansion-panel-header>
+      <div>
+        <p>Este es el contenido!</p>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
 </div>
 
 <ng-template #loader>

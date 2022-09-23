@@ -15,12 +15,18 @@
 }
 
 .body {
-  display: flex;
-  padding: 20px 20px;
-
   .left-side {
     margin-right: auto;
   }
+
+  mat-expansion-panel-header {
+    display: flex;
+    padding: 20px 20px;
+  }
+
+  // ::ng-deep .mat-expansion-panel-content {
+  //   display: none;
+  // }
 }
 
 .in-progress {
