@@ -9,6 +9,7 @@ import { PillsService } from '../pills.service';
 })
 export class PillLastTakenComponent implements OnInit {
   timeAgo = '';
+  detailsExpanded = false;
 
   constructor(private pillsService: PillsService) {}
 
