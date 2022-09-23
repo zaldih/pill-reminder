@@ -1,17 +1,19 @@
 <div class="root" *ngIf="lastPill" matRipple>
-    <div class="body">
-        <div class="left-side">
-            <div class="title">
-                Última pastilla
-            </div>
-            Tomada a las {{ lastPill.timestamp| date: 'HH:mm' }}
-        </div>
-        <div class="time-ago" *ngIf="timeAgo; else loader">
-            Hace <span class="time-ago-counter">{{ timeAgo }}</span>
-        </div>
+  <div
+    class="body"
+    [class]="lastPill.canTakeNext() ? 'completed' : 'in-progress'"
+  >
+    <div class="left-side">
+      <div class="title">Última pastilla</div>
+      Tomada a las {{ lastPill.timestamp | date: "HH:mm" }}
     </div>
+    <div class="time-ago" *ngIf="timeAgo; else loader">
+      Hace <span class="time-ago-counter">{{ timeAgo }}</span>
+    </div>
+  </div>
 </div>
 
 <ng-template #loader>
-    <mat-spinner [diameter]="35"></mat-spinner>
+  <mat-spinner [diameter]="35"></mat-spinner>
 </ng-template>
+

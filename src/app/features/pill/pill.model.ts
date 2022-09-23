@@ -11,4 +11,8 @@ export class Pill {
     this.takeFrequency = 28800000; // 8 hours
     this.nextTake = this.timestamp + this.takeFrequency;
   }
+
+  canTakeNext(): boolean {
+    return new Date().getTime() > this.nextTake;
+  }
 }
