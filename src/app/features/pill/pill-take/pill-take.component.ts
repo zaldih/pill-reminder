@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 import { PillsService } from '../pills.service';
 
@@ -26,7 +27,10 @@ export class PillTakeComponent implements OnInit {
     this.onMoveMouse(event.targetTouches[0]);
   }
 
-  constructor(private pillsService: PillsService) {}
+  constructor(
+    private pillsService: PillsService,
+    private snackBar: MatSnackBar
+  ) {}
 
   ngOnInit(): void {
     const dragElement = document.getElementById('dragable');
@@ -90,8 +94,10 @@ export class PillTakeComponent implements OnInit {
 
   private slideCompleted() {
     this.endDrag();
-    console.log('ADD PILL! slide completed');
     this.pillsService.takePill();
+    this.snackBar.open('Pastilla tomada!', 'Cerrar', {
+      duration: 4000,
+    });
     if ('vibrate' in navigator) {
       window.navigator.vibrate([50, 100, 50]);
     }
