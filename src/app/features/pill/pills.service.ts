@@ -38,7 +38,7 @@ export class PillsService {
     return this.pillsTaked;
   }
 
-  private savePills() {
+  savePills() {
     localStorage.setItem(PILLS_STORAGE_KEY, JSON.stringify(this.pillsTaked));
   }
 

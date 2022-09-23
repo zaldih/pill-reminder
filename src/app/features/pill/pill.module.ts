@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { PillAllTakenComponent } from './pill-all-taken/pill-all-taken.component';
 import { PillLastTakenComponent } from './pill-last-taken/pill-last-taken.component';
 import { PillTakeComponent } from './pill-take/pill-take.component';
+import { PillEditDialogComponent } from './pill-edit-dialog/pill-edit-dialog.component';
+import { FormsModule } from '@angular/forms';
 
 const COMPONENTS = [
   PillLastTakenComponent,
@@ -12,8 +14,8 @@ const COMPONENTS = [
 ];
 
 @NgModule({
-  declarations: [...COMPONENTS],
+  declarations: [...COMPONENTS, PillEditDialogComponent],
   exports: [...COMPONENTS],
-  imports: [CommonModule, MaterialModule],
+  imports: [CommonModule, MaterialModule, FormsModule],
 })
 export class PillModule {}

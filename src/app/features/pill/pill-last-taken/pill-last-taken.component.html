@@ -35,6 +35,28 @@
             Puedes tomar otra a las
             <b>{{ lastPill.nextTake | date: "HH:mm" }}</b>
           </div>
+          <div *ngIf="lastPill.comment">
+            <b>Comentario:</b> {{ lastPill.comment }}
+          </div>
+          <div>
+            <button
+              *ngIf="!lastPill.comment"
+              mat-button
+              class="edit-comment-btn"
+              (click)="editComment()"
+            >
+              Añadir comentario
+            </button>
+
+            <button
+              *ngIf="lastPill.comment"
+              mat-button
+              class="edit-comment-btn"
+              (click)="editComment()"
+            >
+              Editar comentario
+            </button>
+          </div>
         </div>
       </ng-template>
     </mat-expansion-panel>
