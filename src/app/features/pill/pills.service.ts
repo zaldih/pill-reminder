@@ -32,6 +32,8 @@ export class PillsService {
     this.pillsTaked = this.pillsTaked.filter(
       (actualPill) => actualPill.timestamp !== pill.timestamp
     );
+
+    this.savePills();
   }
 
   getLastPill() {
