@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import packageInfo from '../../../../package.json';
 import { PillsService } from 'src/app/features/pill/pills.service';
 
 @Component({
@@ -9,6 +9,7 @@ import { PillsService } from 'src/app/features/pill/pills.service';
 })
 export class HomeComponent implements OnInit {
   allPillsVisible = false;
+  appVersion = packageInfo.version;
 
   constructor(private pillsService: PillsService) {}
 
