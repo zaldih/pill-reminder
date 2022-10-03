@@ -17,4 +17,9 @@ export class Pill {
   canTakeNext(): boolean {
     return new Date().getTime() > this.nextTake;
   }
+
+  isExpired(): boolean {
+    const marginTime = this.nextTake + this.takeFrequency * 9;
+    return new Date().getTime() > marginTime;
+  }
 }
