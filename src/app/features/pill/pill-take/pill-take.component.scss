@@ -68,7 +68,12 @@
   z-index: -1;
 }
 
-.slider-bg {
+.frequency-input {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 }
 
 @keyframes bar-gradient {
