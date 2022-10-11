@@ -1,0 +1,85 @@
+{
+  "configVersion": 1,
+  "timestamp": 1665522739883,
+  "index": "/pill-reminder/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/pill-reminder/151.536684477b9e7e9b.js",
+        "/pill-reminder/favicon.ico",
+        "/pill-reminder/index.html",
+        "/pill-reminder/main.a5db1c8e2527d868.js",
+        "/pill-reminder/manifest.webmanifest",
+        "/pill-reminder/polyfills.3d61d13e333f0bd6.js",
+        "/pill-reminder/runtime.e4c993fb61f424a0.js",
+        "/pill-reminder/styles.d593061495eaf8dd.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/pill-reminder/assets/Pill Reminder 2.svg",
+        "/pill-reminder/assets/Pill Reminder title.svg",
+        "/pill-reminder/assets/icon.svg",
+        "/pill-reminder/assets/icons/android-launchericon-144-144.png",
+        "/pill-reminder/assets/icons/android-launchericon-192-192.png",
+        "/pill-reminder/assets/icons/android-launchericon-48-48.png",
+        "/pill-reminder/assets/icons/android-launchericon-512-512.png",
+        "/pill-reminder/assets/icons/android-launchericon-72-72.png",
+        "/pill-reminder/assets/icons/android-launchericon-96-96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/pill-reminder/151.536684477b9e7e9b.js": "820418e170679f42d05603182d14c54e1c142d15",
+    "/pill-reminder/assets/Pill Reminder 2.svg": "19ac5af0d0bc621cfa6d087104d5eda120148c34",
+    "/pill-reminder/assets/Pill Reminder title.svg": "67807ae8908e4e2a14fd4be0b61d3aa47bd33cc2",
+    "/pill-reminder/assets/icon.svg": "550463790c4f2f8a3c3bc2971cedf234b3a1e8f5",
+    "/pill-reminder/assets/icons/android-launchericon-144-144.png": "3bcf9b129a258b3b508a4173bba1e82b8405b822",
+    "/pill-reminder/assets/icons/android-launchericon-192-192.png": "8e88d6508db524ac867069967a23a548a9adefd5",
+    "/pill-reminder/assets/icons/android-launchericon-48-48.png": "8cd2def74266d9c099444c5fa8a1673969a5b1d2",
+    "/pill-reminder/assets/icons/android-launchericon-512-512.png": "4bb004f68804f575298f02e480b60b2258a19d6f",
+    "/pill-reminder/assets/icons/android-launchericon-72-72.png": "ba0fdf879dc9c09ec050a709cb57a1de88958da6",
+    "/pill-reminder/assets/icons/android-launchericon-96-96.png": "d9e28bf2363d914a266f3874865f2d9639c8d21e",
+    "/pill-reminder/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/pill-reminder/index.html": "0c65a7af92cc7b7607c6dae4c5c338708e49bf97",
+    "/pill-reminder/main.a5db1c8e2527d868.js": "9d99f3b00d49579a37000d4e22dbbe5514e106b0",
+    "/pill-reminder/manifest.webmanifest": "c8d1b1f2f42eba1af2f25ac26ab5208633a8a4a6",
+    "/pill-reminder/polyfills.3d61d13e333f0bd6.js": "287e2eac15d887bbfd7b40d489f7d62bc1d6875f",
+    "/pill-reminder/runtime.e4c993fb61f424a0.js": "0ba2eff82cceb6c55b50e74b556eafe9323ba982",
+    "/pill-reminder/styles.d593061495eaf8dd.css": "cf53d9a3511ee2ff511063f3d7793b063dd42e91"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
