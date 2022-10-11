@@ -49,7 +49,7 @@ export class PillsService {
   }
 
   private loadPills() {
-    const savedPills = localStorage.getItem(PILLS_STORAGE_KEY) || '';
+    const savedPills = localStorage.getItem(PILLS_STORAGE_KEY) || '[]';
     this.pillsTaked = ((JSON.parse(savedPills) as Object[]) || []).map(
       (plainPill) => Object.assign(new Pill(), plainPill)
     );
