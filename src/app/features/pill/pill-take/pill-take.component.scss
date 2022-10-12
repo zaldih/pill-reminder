@@ -76,6 +76,33 @@
   }
 }
 
+.pill-emoji {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 3em;
+  pointer-events: none;
+  user-select: none;
+  animation: take-pill-emoji 2s ease forwards;
+}
+@keyframes take-pill-emoji {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px) rotateZ(-50deg);
+  }
+  40% {
+    opacity: 0.6;
+  }
+  70% {
+    transform: translateY(50) rotateZ(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(110px) rotateZ(5deg);
+  }
+}
+
 @keyframes bar-gradient {
   0% {
     background-position: 200% 50%;

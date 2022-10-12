@@ -11,6 +11,7 @@ import { PillsService } from '../pills.service';
 export class PillTakeComponent implements OnInit {
   positionX = 0;
   isDraging = false;
+  takeSliderCompleted = false;
   private positionXClickStart = 0;
   private dragElement: HTMLElement | null = null;
   private animationPill: HTMLElement | null = null;
@@ -105,6 +106,12 @@ export class PillTakeComponent implements OnInit {
     if ('vibrate' in navigator) {
       window.navigator.vibrate([50, 100, 50]);
     }
+    this.handlePillAnimation();
+  }
+
+  private handlePillAnimation() {
+    this.takeSliderCompleted = true;
+    setTimeout(() => (this.takeSliderCompleted = false), 2000);
   }
 
   private onKeyframe() {
