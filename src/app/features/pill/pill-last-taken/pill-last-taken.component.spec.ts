@@ -8,9 +8,8 @@ describe('PillLastTakenComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PillLastTakenComponent ]
-    })
-    .compileComponents();
+      declarations: [PillLastTakenComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

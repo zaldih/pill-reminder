@@ -8,9 +8,8 @@ describe('PillEditDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PillEditDialogComponent ]
-    })
-    .compileComponents();
+      declarations: [PillEditDialogComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
