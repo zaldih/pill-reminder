@@ -1,3 +1,23 @@
+mat-sidenav {
+  min-width: 280px;
+}
+mat-sidenav-container {
+  height: 100vh;
+}
+
+.sidenav-header {
+  background-color: #596886;
+  text-align: center;
+  img {
+    width: 70%;
+  }
+}
+.sidenav-content {
+  padding: 7px;
+  margin-top: 30px;
+  font-size: 1.3em;
+}
+
 .root {
   text-align: center;
 }
@@ -10,4 +30,8 @@
 
 .title-img {
   max-width: 500px;
+}
+.sidenav-toggle-button {
+  position: fixed;
+  bottom: 10px;
 }

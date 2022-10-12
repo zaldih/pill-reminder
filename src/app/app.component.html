@@ -1,15 +1,29 @@
-<div class="root">
-  <!--  <h1>Pill Reminder</h1> -->
-  <div class="title-container">
-    <img
-      class="title-img"
-      src="assets/Pill Reminder title.svg"
-      alt="Logo"
-      style="width: 100%"
-    />
-  </div>
+<mat-sidenav-container>
+  <mat-sidenav #drawer mode="over" opened>
+    <div class="sidenav-header">
+      <img src="assets/icon.svg" />
+    </div>
+    <div class="sidenav-content">Sección en construcción</div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="root">
+      <!--  <h1>Pill Reminder</h1> -->
+      <div class="title-container">
+        <img
+          class="title-img"
+          src="assets/Pill Reminder title.svg"
+          alt="Logo"
+          style="width: 100%"
+        />
+      </div>
 
-  <div class="body">
-    <app-home></app-home>
-  </div>
-</div>
+      <div class="body">
+        <app-home></app-home>
+      </div>
+    </div>
+
+    <button class="sidenav-toggle-button" mat-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-sidenav-content>
+</mat-sidenav-container>
