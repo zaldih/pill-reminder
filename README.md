@@ -4,35 +4,43 @@
 
 # <img src="docs/banner.svg" height="125px" alt="Pill Reminder logo"/>
 
-Pill Reminder es una APP simple y minimalista que te permite registrar la última vez que te tomastes una pastilla de una forma simple, efectiva y elegante.
+[español](README.es.md)
 
-Simplemente necesitas deslizar el icono para registrarla. Cada vez que vuelvas a abrir la APP verás el tiempo transcurrido desde ese momento.
+Pill Reminder is a simple and minimalistic APP that allows you to record the last time you took a pill in a simple, effective and elegant way.
 
-También puedes consultar a que hora podrás tomarte la próxima o añadir comentarios adicionales.
+You just need to swipe the icon to record it. Every time you reopen the APP you will see the time elapsed since that moment.
 
-## Features
+You can also check when you can take your next pill or add additional comments.
 
-- [x] Registra el momento en el que se realiza la toma.
-- [x] Configurar cuanto hay que esperar hasta la siguiente.
-- [x] Añadir comentarios.
-- [x] Compatibilidad movil.
-- [ ] Compatibilidad escritorio.
-- [ ] Multi-idioma
-- [ ] Notificar cuando haya pasado el tiempo de espera.
-- [ ] Crea varios tipos de medicamentos con su correspondiente configuración.
-- [ ] Control simultaneo de más de una toma.
-- [ ] Mejorar UX.
-- [ ] Menu para consultar histórico.
-- [ ] Permitir exportar e importar los datos guardados.
+## :heavy_check_mark: Features
 
-## Como usarla
+- [x] Record the time at which the shot is taken.
+- [x] Set how long to wait for the next shot.
+- [x] Add comments.
+- [x] Mobile compatibility.
+- [ ] Desktop compatibility.
+- [ ] Multi-language
+- [ ] Notify when the waiting time has expired.
+- [ ] Creates several types of medications with their corresponding configuration.
+- [ ] Simultaneous control of more than one intake.
+- [ ] Improve UX.
+- [ ] Menu to consult history.
+- [ ] Allow exporting and importing of saved data.
 
-Basta con acceder a la página.
+## :clipboard: How to use it
 
-Es recomentable instalarla mediante **Menu > Añadir a la pantalla de inicio** .
+Just access the page.
 
-## ¿Dónde se almacenan los datos?
+It is recommended to install it through **Menu > Add to home screen** .
 
-Todos los datos son almacenados en el navegador desde el que se utiliza la APP. En ningún momento estos son enviados a ningún servidor.
+## :floppy_disk: Where is the data stored?
 
-Es por ello que es recomendable utilizar acceder desde el mismo dispositivo y navegador.
+All data is stored in the browser from which the APP is used. At no time are they sent to any server.
+
+That is why it is recommended to use the same device and browser to access the APP.
+
+<a name="contributing"></a>
+
+# :revolving_hearts: Contributing
+
+If you want to contribute check the [CONTRIBUTING.md](.github/CONTRIBUTING.md)
