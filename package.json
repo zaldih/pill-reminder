@@ -1,6 +1,7 @@
 {
   "name": "pill-reminder",
   "version": "0.0.0",
+  "description": "A simple and minimalistic APP that allows you to record the last time you took a pill in a simple, effective and elegant way",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -11,6 +12,10 @@
     "prepare": "husky install"
   },
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zaldih/pill-reminder"
+  },
   "dependencies": {
     "@angular/animations": "~13.3.0",
     "@angular/cdk": "^13.3.9",
