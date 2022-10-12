@@ -1,8 +1,8 @@
 {
-  "name": "pill-reminder",
-  "short_name": "pill-reminder",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "Pill Reminder",
+  "short_name": "Pill Reminder",
+  "theme_color": "#FFD5AF",
+  "background_color": "#596886",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
