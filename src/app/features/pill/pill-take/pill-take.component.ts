@@ -56,7 +56,6 @@ export class PillTakeComponent implements OnInit {
   }
 
   endDrag() {
-    console.log('end drag', this.positionX);
     this.isDraging = false;
     if (!this.dragElement) return;
     this.dragElement.classList.remove('active');
