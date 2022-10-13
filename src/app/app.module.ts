@@ -6,6 +6,8 @@ import { NgModule } from '@angular/core';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
+import { MaterialModule } from './shared/material/material.module';
+import { SidenavModule } from './features/sidenav/sidenav.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,6 +16,8 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     FormsModule,
     HomeModule,
+    SidenavModule,
+    MaterialModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the application is stable
