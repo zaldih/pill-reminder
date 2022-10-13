@@ -1,13 +1,11 @@
 <mat-sidenav-container>
-  <mat-sidenav #drawer mode="over" opened>
-    <div class="sidenav-header">
-      <img src="assets/icon.svg" />
-    </div>
-    <div class="sidenav-content">Sección en construcción</div>
+  <mat-sidenav #drawer [mode]="drawerMode" [opened]="isOpened">
+    <app-sidenav-content></app-sidenav-content>
   </mat-sidenav>
+
   <mat-sidenav-content>
+    <!-- //TODO put here router -->
     <div class="root">
-      <!--  <h1>Pill Reminder</h1> -->
       <div class="title-container">
         <img
           class="title-img"
@@ -22,7 +20,7 @@
       </div>
     </div>
 
-    <button class="sidenav-toggle-button" mat-button (click)="drawer.toggle()">
+    <button class="sidenav-toggle-button" mat-button (click)="toggleSidenav()">
       <mat-icon>menu</mat-icon>
     </button>
   </mat-sidenav-content>

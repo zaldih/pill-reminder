@@ -7,6 +7,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './shared/material/material.module';
+import { SidenavModule } from './features/sidenav/sidenav.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,6 +16,7 @@ import { MaterialModule } from './shared/material/material.module';
     BrowserAnimationsModule,
     FormsModule,
     HomeModule,
+    SidenavModule,
     MaterialModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
