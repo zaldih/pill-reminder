@@ -3,5 +3,23 @@
     <img src="assets/icon.svg" />
   </div>
 
-  <div class="sidenav-content">Sección en construcción</div>
+  <div class="sidenav-content">
+    {{ "section-under-construction" | transloco }}
+
+    <div style="margin-top: 62px">
+      <mat-form-field appearance="fill">
+        <mat-label
+          ><mat-icon>translate</mat-icon>
+          {{ "language" | transloco }}</mat-label
+        >
+        <mat-select
+          [(value)]="languageSelected"
+          (selectionChange)="onLanguageChange()"
+        >
+          <mat-option value="en">English</mat-option>
+          <mat-option value="es">Español</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
 </div>

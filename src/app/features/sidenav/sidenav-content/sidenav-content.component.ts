@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslocoService } from '@ngneat/transloco';
 import { SidenavService } from '../../sidenav.service';
 
 @Component({
@@ -7,7 +8,17 @@ import { SidenavService } from '../../sidenav.service';
   styleUrls: ['./sidenav-content.component.scss'],
 })
 export class SidenavContentComponent implements OnInit {
-  constructor(private sidenavService: SidenavService) {}
+  languageSelected = this.translocoService.getDefaultLang();
+
+  constructor(
+    private sidenavService: SidenavService,
+    private translocoService: TranslocoService
+  ) {}
 
   ngOnInit(): void {}
+
+  onLanguageChange() {
+    this.translocoService.setDefaultLang(this.languageSelected);
+    this.translocoService.setActiveLang(this.languageSelected);
+  }
 }
