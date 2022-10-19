@@ -5,7 +5,7 @@
     *ngIf="lastPillTakenRecently; else noPillTaken"
   ></app-pill-last-taken>
   <button mat-stroked-button (click)="toggleAllPills()" *ngIf="somePillTaked">
-    {{ (!allPillsVisible ? "view-all" : "hide") | transloco }}
+    {{ (!allPillsVisible ? "global.view_all" : "global.hide") | transloco }}
   </button>
   <app-pill-all-taken *ngIf="allPillsVisible"></app-pill-all-taken>
 
@@ -18,7 +18,7 @@
 <ng-template #noPillTaken>
   <div class="no-pill-taken-container">
     <div class="no-pill-taken">
-      {{ "slide-start-message" | transloco }}
+      {{ "pills.slide_start_message" | transloco }}
     </div>
   </div>
 </ng-template>

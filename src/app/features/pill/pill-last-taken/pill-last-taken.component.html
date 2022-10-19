@@ -11,18 +11,18 @@
       <mat-expansion-panel-header>
         <div class="panel-header-body">
           <div class="left-side">
-            <div class="title">{{ "last-pill" | transloco }}</div>
-            {{ "take-every" | transloco }}
+            <div class="title">{{ "pills.last_pill" | transloco }}</div>
+            {{ "pills.take_every" | transloco }}
             {{ lastPill.timestamp | date: "HH:mm" }}
           </div>
           <div class="time-ago" *ngIf="timeAgo; else loader">
-            {{ "ago" | transloco }}
+            {{ "global.ago" | transloco }}
             <span class="time-ago-counter">{{ timeAgo }}</span>
           </div>
         </div>
         <div class="panel-header-footer" *ngIf="!detailsExpanded">
           <mat-icon>expand_more</mat-icon>
-          {{ "show-more" | transloco }}
+          {{ "global.show_more" | transloco }}
           <mat-icon>expand_more</mat-icon>
         </div>
       </mat-expansion-panel-header>
@@ -30,15 +30,15 @@
       <ng-template matExpansionPanelContent>
         <div class="panel-body-body">
           <div>
-            {{ "take-every" | transloco }}
+            {{ "pills.take_every" | transloco }}
             <b>{{ lastPill.takeFrequency / 1000 / 60 / 60 }} horas </b>.
           </div>
           <div>
-            {{ "can-take-other-at" | transloco }}
+            {{ "pills.can_take_other_at" | transloco }}
             <b>{{ lastPill.nextTake | date: "HH:mm" }}</b>
           </div>
           <div *ngIf="lastPill.comment">
-            <b>{{ "comment" | transloco }}:</b> {{ lastPill.comment }}
+            <b>{{ "pills.comment" | transloco }}:</b> {{ lastPill.comment }}
           </div>
           <div>
             <button
@@ -47,7 +47,7 @@
               class="edit-comment-btn"
               (click)="editComment()"
             >
-              {{ "add-comment" | transloco }}
+              {{ "pills.add_comment" | transloco }}
             </button>
 
             <button
@@ -56,7 +56,7 @@
               class="edit-comment-btn"
               (click)="editComment()"
             >
-              {{ "edit-comment" | transloco }}
+              {{ "pills.edit_comment" | transloco }}
             </button>
           </div>
         </div>

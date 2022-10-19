@@ -102,8 +102,8 @@ export class PillTakeComponent implements OnInit {
     this.endDrag();
     this.pillsService.takePill();
     this.snackBar.open(
-      this.translocoService.translate('pill-taked'),
-      this.translocoService.translate('close'),
+      this.translocoService.translate('pills.pill_taked'),
+      this.translocoService.translate('global.close'),
       {
         duration: 4000,
       }
