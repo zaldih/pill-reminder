@@ -28,6 +28,7 @@
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
     "@angular/service-worker": "~13.3.0",
+    "@ngneat/transloco": "^4.1.1",
     "animate.css": "^4.1.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

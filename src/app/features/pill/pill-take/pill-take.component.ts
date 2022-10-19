@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { TranslocoService } from '@ngneat/transloco';
 
 import { PillsService } from '../pills.service';
 
@@ -30,7 +31,8 @@ export class PillTakeComponent implements OnInit {
 
   constructor(
     private pillsService: PillsService,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
+    private translocoService: TranslocoService
   ) {}
 
   ngOnInit(): void {
@@ -99,9 +101,13 @@ export class PillTakeComponent implements OnInit {
   private slideCompleted() {
     this.endDrag();
     this.pillsService.takePill();
-    this.snackBar.open('Pastilla tomada!', 'Cerrar', {
-      duration: 4000,
-    });
+    this.snackBar.open(
+      this.translocoService.translate('pills.pill_taked'),
+      this.translocoService.translate('global.close'),
+      {
+        duration: 4000,
+      }
+    );
     if ('vibrate' in navigator) {
       window.navigator.vibrate([50, 100, 50]);
     }

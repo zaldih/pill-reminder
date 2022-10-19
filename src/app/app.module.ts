@@ -8,12 +8,15 @@ import { environment } from '../environments/environment';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './shared/material/material.module';
 import { SidenavModule } from './features/sidenav/sidenav.module';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslocoRootModule } from './transloco-root.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    TranslocoRootModule,
     FormsModule,
     HomeModule,
     SidenavModule,
@@ -24,6 +27,7 @@ import { SidenavModule } from './features/sidenav/sidenav.module';
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerImmediately',
     }),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

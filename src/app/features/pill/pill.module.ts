@@ -6,6 +6,7 @@ import { PillLastTakenComponent } from './pill-last-taken/pill-last-taken.compon
 import { PillTakeComponent } from './pill-take/pill-take.component';
 import { PillEditDialogComponent } from './pill-edit-dialog/pill-edit-dialog.component';
 import { FormsModule } from '@angular/forms';
+import { TranslocoModule } from '@ngneat/transloco';
 
 const COMPONENTS = [
   PillLastTakenComponent,
@@ -16,6 +17,6 @@ const COMPONENTS = [
 @NgModule({
   declarations: [...COMPONENTS, PillEditDialogComponent],
   exports: [...COMPONENTS],
-  imports: [CommonModule, MaterialModule, FormsModule],
+  imports: [CommonModule, TranslocoModule, MaterialModule, FormsModule],
 })
 export class PillModule {}

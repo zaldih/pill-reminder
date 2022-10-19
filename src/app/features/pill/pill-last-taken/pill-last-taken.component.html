@@ -11,16 +11,18 @@
       <mat-expansion-panel-header>
         <div class="panel-header-body">
           <div class="left-side">
-            <div class="title">Última pastilla</div>
-            Tomada a las {{ lastPill.timestamp | date: "HH:mm" }}
+            <div class="title">{{ "pills.last_pill" | transloco }}</div>
+            {{ "pills.take_every" | transloco }}
+            {{ lastPill.timestamp | date: "HH:mm" }}
           </div>
           <div class="time-ago" *ngIf="timeAgo; else loader">
-            Hace <span class="time-ago-counter">{{ timeAgo }}</span>
+            {{ "global.ago" | transloco }}
+            <span class="time-ago-counter">{{ timeAgo }}</span>
           </div>
         </div>
         <div class="panel-header-footer" *ngIf="!detailsExpanded">
           <mat-icon>expand_more</mat-icon>
-          Mostrar más
+          {{ "global.show_more" | transloco }}
           <mat-icon>expand_more</mat-icon>
         </div>
       </mat-expansion-panel-header>
@@ -28,15 +30,15 @@
       <ng-template matExpansionPanelContent>
         <div class="panel-body-body">
           <div>
-            Tomar cada
+            {{ "pills.take_every" | transloco }}
             <b>{{ lastPill.takeFrequency / 1000 / 60 / 60 }} horas </b>.
           </div>
           <div>
-            Puedes tomar otra a las
+            {{ "pills.can_take_other_at" | transloco }}
             <b>{{ lastPill.nextTake | date: "HH:mm" }}</b>
           </div>
           <div *ngIf="lastPill.comment">
-            <b>Comentario:</b> {{ lastPill.comment }}
+            <b>{{ "pills.comment" | transloco }}:</b> {{ lastPill.comment }}
           </div>
           <div>
             <button
@@ -45,7 +47,7 @@
               class="edit-comment-btn"
               (click)="editComment()"
             >
-              Añadir comentario
+              {{ "pills.add_comment" | transloco }}
             </button>
 
             <button
@@ -54,7 +56,7 @@
               class="edit-comment-btn"
               (click)="editComment()"
             >
-              Editar comentario
+              {{ "pills.edit_comment" | transloco }}
             </button>
           </div>
         </div>

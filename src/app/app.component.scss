@@ -3,6 +3,8 @@ mat-sidenav {
 }
 mat-sidenav-container {
   height: 100vh;
+  // Add multiline for \n (transloco)
+  white-space: pre-wrap;
 }
 
 .root {
