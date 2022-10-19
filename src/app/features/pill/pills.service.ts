@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { LocalStorageService } from 'src/app/shared/services/local-storage.service';
 import { Pill } from './pill.model';
 
 const PILLS_STORAGE_KEY = 'pills';
@@ -13,7 +14,7 @@ export class PillsService {
   };
   private pillsTaked: Pill[] = [];
 
-  constructor() {
+  constructor(private localStorageService: LocalStorageService) {
     this.loadPills();
   }
 
@@ -45,11 +46,15 @@ export class PillsService {
   }
 
   savePills() {
-    localStorage.setItem(PILLS_STORAGE_KEY, JSON.stringify(this.pillsTaked));
+    this.localStorageService.setItem(
+      PILLS_STORAGE_KEY,
+      JSON.stringify(this.pillsTaked)
+    );
   }
 
   private loadPills() {
-    const savedPills = localStorage.getItem(PILLS_STORAGE_KEY) || '[]';
+    const savedPills =
+      this.localStorageService.getItem(PILLS_STORAGE_KEY) || '[]';
     this.pillsTaked = ((JSON.parse(savedPills) as Object[]) || []).map(
       (plainPill) => Object.assign(new Pill(), plainPill)
     );
