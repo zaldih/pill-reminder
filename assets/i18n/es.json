@@ -1,0 +1,25 @@
+{
+  "global": {
+    "view_all": "Ver todas",
+    "hide": "Ocultar",
+    "close": "Cerrar",
+    "ago": "Hace",
+    "hours": "horas",
+    "show_more": "Mostrar más"
+  },
+  "menus": {
+    "section_under_construction": "Sección en construcción",
+    "language": "Idioma"
+  },
+  "pills": {
+    "slide_start_message": "¡Desliza para registrar\neste momento!",
+    "take_every": "Tomar cada",
+    "last_pill": "Última pastilla",
+    "taked_at": "Tomada a las",
+    "pill_taked": "¡Pastilla tomada!",
+    "can_take_other_at": "Puedes tomar otra a las",
+    "comment": "Comentario",
+    "add_comment": "Añadir comentario",
+    "edit_comment": "Editar comentario"
+  }
+}
