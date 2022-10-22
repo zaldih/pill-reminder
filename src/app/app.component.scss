@@ -1,3 +1,12 @@
+mat-sidenav {
+  min-width: 280px;
+}
+mat-sidenav-container {
+  height: 100vh;
+  // Add multiline for \n (transloco)
+  white-space: pre-wrap;
+}
+
 .root {
   text-align: center;
 }
@@ -10,4 +19,8 @@
 
 .title-img {
   max-width: 500px;
+}
+.sidenav-toggle-button {
+  position: fixed;
+  bottom: 2px;
 }

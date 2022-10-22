@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SidenavService } from './features/sidenav.service';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'pill-reminder';
+  title = 'Pill Reminder';
+
+  constructor(private sidenavService: SidenavService) {}
+
+  toggleSidenav() {
+    this.sidenavService.toggle();
+  }
+
+  get isOpened() {
+    return this.sidenavService.opened;
+  }
+
+  get drawerMode() {
+    return this.sidenavService.mode;
+  }
 }
 
 if (typeof Worker !== 'undefined') {

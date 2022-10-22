@@ -19,7 +19,7 @@ export class Pill {
   }
 
   isExpired(): boolean {
-    const marginTime = this.nextTake + this.takeFrequency * 9;
+    const marginTime = this.nextTake + this.takeFrequency * 3;
     return new Date().getTime() > marginTime;
   }
 }
