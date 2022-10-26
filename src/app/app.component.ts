@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SidenavService } from './features/sidenav.service';
+import packageInfo from '../../package.json';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,7 @@ import { SidenavService } from './features/sidenav.service';
 })
 export class AppComponent {
   title = 'Pill Reminder';
+  appVersion = packageInfo.version;
 
   constructor(private sidenavService: SidenavService) {}
 
