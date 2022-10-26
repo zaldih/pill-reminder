@@ -1,0 +1,25 @@
+{
+  "global": {
+    "view_all": "Voir tous",
+    "hide": "Cacher",
+    "close": "Fermer",
+    "ago": "Il y a",
+    "hours": "heures",
+    "show_more": "Montre plus"
+  },
+  "menus": {
+    "section_under_construction": "Rubrique en construction",
+    "language": "Langage"
+  },
+  "pills": {
+    "slide_start_message": "Faites défiler la page\npour enregistrer ce moment!",
+    "take_every": "Prendre toutes les",
+    "last_pill": "Dernière pilule prise",
+    "taked_at": "Prendre à ",
+    "pill_taked": "Pilule prise!",
+    "can_take_other_at": "Vous pouvez en prendre un autre à",
+    "comment": "Commentaire",
+    "add_comment": "Ajouter un commentaire",
+    "edit_comment": "Modifier le commentaire"
+  }
+}
