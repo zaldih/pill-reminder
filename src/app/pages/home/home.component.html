@@ -8,11 +8,6 @@
     {{ (!allPillsVisible ? "global.view_all" : "global.hide") | transloco }}
   </button>
   <app-pill-all-taken *ngIf="allPillsVisible"></app-pill-all-taken>
-
-  <footer>
-    <div class="beta-info">BETA</div>
-    <div>v{{ appVersion }}</div>
-  </footer>
 </div>
 
 <ng-template #noPillTaken>

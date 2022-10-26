@@ -20,8 +20,19 @@
       </div>
     </div>
 
-    <button class="sidenav-toggle-button" mat-button (click)="toggleSidenav()">
-      <mat-icon>menu</mat-icon>
-    </button>
+    <footer>
+      <button
+        class="sidenav-toggle-button"
+        mat-button
+        (click)="toggleSidenav()"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <div class="middle">
+        <div class="beta-info">BETA</div>
+        <div>v{{ appVersion }}</div>
+      </div>
+    </footer>
   </mat-sidenav-content>
 </mat-sidenav-container>
