@@ -20,7 +20,29 @@ mat-sidenav-container {
 .title-img {
   max-width: 500px;
 }
-.sidenav-toggle-button {
+
+footer {
+  max-width: 500px;
   position: fixed;
-  bottom: 2px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+
+  .middle {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+  }
+
+  .beta-info {
+    font-weight: 600;
+    letter-spacing: 6px;
+    opacity: 0.2;
+  }
+
+  .sidenav-toggle-button {
+    position: fixed;
+    bottom: 2px;
+  }
 }
