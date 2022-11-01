@@ -12,7 +12,7 @@
         <div class="panel-header-body">
           <div class="left-side">
             <div class="title">{{ "pills.last_pill" | transloco }}</div>
-            {{ "pills.take_every" | transloco }}
+            {{ "pills.taked_at" | transloco }}
             {{ lastPill.timestamp | date: "HH:mm" }}
           </div>
           <div class="time-ago" *ngIf="timeAgo; else loader">
