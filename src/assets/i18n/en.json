@@ -1,3 +1,25 @@
 {
-  "slide-start-message": "¡HAKGSDFKHJAGSDFDesliza para registrar/neste momento!"
+  "global": {
+    "view_all": "View all",
+    "hide": "Hide",
+    "close": "Close",
+    "ago": "Ago",
+    "hours": "hours",
+    "show_more": "Show more"
+  },
+  "menus": {
+    "section_under_construction": "Section under construction",
+    "language": "Language"
+  },
+  "pills": {
+    "slide_start_message": "Slide to register\nthis moment!",
+    "take_every": "Take every",
+    "last_pill": "Las pill",
+    "taked_at": "Taked at",
+    "pill_taked": "Pill taked!",
+    "can_take_other_at": "Can take other at",
+    "comment": "Comment",
+    "add_comment": "Add comment",
+    "edit_comment": "Edit comment"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "name": "pill-reminder",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "A simple and minimalistic APP that allows you to record the last time you took a pill in a simple, effective and elegant way",
   "scripts": {
     "ng": "ng",
