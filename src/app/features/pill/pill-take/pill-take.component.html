@@ -17,22 +17,17 @@
   <div class="options-container">
     <span>
       {{ "pills.take_every" | transloco }}
-      <mat-form-field
-        appearance="standard"
-        style="width: 21px; text-align: center"
-      >
-        <mat-label></mat-label>
-        <input
-          matInput
-          type="number"
-          min="1"
-          max="40"
-          #frequencyInput
-          class="frequency-input"
-          (click)="frequencyInput.select()"
-          [(ngModel)]="pillConfig.takeFrequencyHours"
-        />
-      </mat-form-field>
+      <input
+        matInput
+        type="number"
+        min="1"
+        max="40"
+        #frequencyInput
+        id="frequencyInput"
+        class="frequency-input"
+        (click)="frequencyInput.select()"
+        [(ngModel)]="pillConfig.takeFrequencyHours"
+      />
       {{ "global.hours" | transloco }}
     </span>
   </div>

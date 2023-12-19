@@ -17,27 +17,27 @@
     "url": "https://github.com/zaldih/pill-reminder"
   },
   "dependencies": {
-    "@angular/animations": "~13.3.0",
-    "@angular/cdk": "^13.3.9",
-    "@angular/common": "~13.3.0",
-    "@angular/compiler": "~13.3.0",
-    "@angular/core": "~13.3.0",
-    "@angular/forms": "~13.3.0",
-    "@angular/material": "^13.3.9",
-    "@angular/platform-browser": "~13.3.0",
-    "@angular/platform-browser-dynamic": "~13.3.0",
-    "@angular/router": "~13.3.0",
-    "@angular/service-worker": "~13.3.0",
+    "@angular/animations": "^17.0.7",
+    "@angular/cdk": "^15.2.9",
+    "@angular/common": "^17.0.7",
+    "@angular/compiler": "^17.0.7",
+    "@angular/core": "^17.0.7",
+    "@angular/forms": "^17.0.7",
+    "@angular/material": "^15.2.9",
+    "@angular/platform-browser": "^17.0.7",
+    "@angular/platform-browser-dynamic": "^17.0.7",
+    "@angular/router": "^17.0.7",
+    "@angular/service-worker": "^17.0.7",
     "@ngneat/transloco": "^4.1.1",
     "animate.css": "^4.1.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.14.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~13.3.6",
-    "@angular/cli": "~13.3.6",
-    "@angular/compiler-cli": "~13.3.0",
+    "@angular-devkit/build-angular": "^17.0.7",
+    "@angular/cli": "^17.0.7",
+    "@angular/compiler-cli": "^17.0.7",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "husky": "^8.0.1",
@@ -49,7 +49,7 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
-    "typescript": "~4.6.2"
+    "typescript": "~5.2.2"
   },
   "lint-staged": {
     "*": "prettier --write"

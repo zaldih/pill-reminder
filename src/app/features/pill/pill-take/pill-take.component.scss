@@ -69,11 +69,18 @@
 }
 
 .frequency-input {
+  text-align: center;
+  width: 21px;
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
+}
+
+.options-container {
+  margin-top: 12px;
+  font-size: 1.2em;
 }
 
 .pill-emoji {
@@ -86,6 +93,7 @@
   user-select: none;
   animation: take-pill-emoji 2s ease forwards;
 }
+
 @keyframes take-pill-emoji {
   0% {
     opacity: 0;

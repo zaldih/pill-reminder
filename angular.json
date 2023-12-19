@@ -77,10 +77,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "pill-reminder:build:production"
+              "buildTarget": "pill-reminder:build:production"
             },
             "development": {
-              "browserTarget": "pill-reminder:build:development"
+              "buildTarget": "pill-reminder:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -88,7 +88,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pill-reminder:build"
+            "buildTarget": "pill-reminder:build"
           }
         },
         "test": {
@@ -115,5 +115,7 @@
       }
     }
   },
-  "defaultProject": "pill-reminder"
+  "cli": {
+    "analytics": false
+  }
 }
