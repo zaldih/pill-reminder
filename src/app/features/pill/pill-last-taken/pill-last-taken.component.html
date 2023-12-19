@@ -12,8 +12,10 @@
         <div class="panel-header-body">
           <div class="left-side">
             <div class="title">{{ "pills.last_pill" | transloco }}</div>
-            {{ "pills.taked_at" | transloco }}
-            {{ lastPill.timestamp | date: "HH:mm" }}
+            <div>
+              <span>{{ "pills.taked_at" | transloco }}</span>
+              <span>{{ lastPill.timestamp | date: "HH:mm" }}</span>
+            </div>
           </div>
           <div class="time-ago" *ngIf="timeAgo; else loader">
             {{ "global.ago" | transloco }}
@@ -38,7 +40,7 @@
             <b>{{ lastPill.nextTake | date: "HH:mm" }}</b>
           </div>
           <div *ngIf="lastPill.comment">
-            <b>{{ "pills.comment" | transloco }}:</b> {{ lastPill.comment }}
+            {{ "pills.comment" | transloco }}: <b>{{ lastPill.comment }}</b>
           </div>
           <div>
             <button
