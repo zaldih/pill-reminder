@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1668682357477,
+  "timestamp": 1731600217291,
   "index": "/pill-reminder/index.html",
   "assetGroups": [
     {
@@ -11,14 +11,14 @@
         "ignoreVary": true
       },
       "urls": [
-        "/pill-reminder/151.536684477b9e7e9b.js",
+        "/pill-reminder/793.536684477b9e7e9b.js",
         "/pill-reminder/favicon.ico",
         "/pill-reminder/index.html",
-        "/pill-reminder/main.5344cb643738ae9c.js",
+        "/pill-reminder/main.f5a914cf0948b5c2.js",
         "/pill-reminder/manifest.webmanifest",
-        "/pill-reminder/polyfills.3d61d13e333f0bd6.js",
-        "/pill-reminder/runtime.e4c993fb61f424a0.js",
-        "/pill-reminder/styles.48c2883504917a00.css"
+        "/pill-reminder/polyfills.6cb39e0857300896.js",
+        "/pill-reminder/runtime.d2cab1d7425041f4.js",
+        "/pill-reminder/styles.a71425ebfefb8b49.css"
       ],
       "patterns": []
     },
@@ -48,11 +48,11 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/pill-reminder/151.536684477b9e7e9b.js": "820418e170679f42d05603182d14c54e1c142d15",
+    "/pill-reminder/793.536684477b9e7e9b.js": "820418e170679f42d05603182d14c54e1c142d15",
     "/pill-reminder/assets/Pill Reminder 2.svg": "19ac5af0d0bc621cfa6d087104d5eda120148c34",
     "/pill-reminder/assets/Pill Reminder title.svg": "67807ae8908e4e2a14fd4be0b61d3aa47bd33cc2",
-    "/pill-reminder/assets/i18n/en.json": "45980803da63b7c10e0218ec325fe8ba6877f405",
-    "/pill-reminder/assets/i18n/es.json": "80061cbb940b8980286cc2e3c7b720e75f3a504d",
+    "/pill-reminder/assets/i18n/en.json": "6a04d225c0ca3f35b6648d3a509f93374c740d8a",
+    "/pill-reminder/assets/i18n/es.json": "a4691e8a30e7f1187334fb0bbeaf103ad8ca276c",
     "/pill-reminder/assets/i18n/fr.json": "cc7af1d6e4c10201c6f45ee35d543ed43f87b5fd",
     "/pill-reminder/assets/icon.svg": "550463790c4f2f8a3c3bc2971cedf234b3a1e8f5",
     "/pill-reminder/assets/icons/android-launchericon-144-144.png": "3bcf9b129a258b3b508a4173bba1e82b8405b822",
@@ -62,12 +62,12 @@
     "/pill-reminder/assets/icons/android-launchericon-72-72.png": "ba0fdf879dc9c09ec050a709cb57a1de88958da6",
     "/pill-reminder/assets/icons/android-launchericon-96-96.png": "d9e28bf2363d914a266f3874865f2d9639c8d21e",
     "/pill-reminder/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/pill-reminder/index.html": "69e3ddad6d3d5c623cff9f87001ebf558ca3fda3",
-    "/pill-reminder/main.5344cb643738ae9c.js": "5e4158d34316918ab58952e67639236aeb875fc1",
+    "/pill-reminder/index.html": "7f57545da037c1976f2c875293dbf9ea51615cf2",
+    "/pill-reminder/main.f5a914cf0948b5c2.js": "2f227476db57a4c98cdd4aea04dd762ca35f5302",
     "/pill-reminder/manifest.webmanifest": "0a394f0403af993641edd5cd7fb80b613c2eccc0",
-    "/pill-reminder/polyfills.3d61d13e333f0bd6.js": "287e2eac15d887bbfd7b40d489f7d62bc1d6875f",
-    "/pill-reminder/runtime.e4c993fb61f424a0.js": "0ba2eff82cceb6c55b50e74b556eafe9323ba982",
-    "/pill-reminder/styles.48c2883504917a00.css": "d6737c43e7ecf55e1890d52aedc1b8bee2fbe520"
+    "/pill-reminder/polyfills.6cb39e0857300896.js": "a92263ab89350cdd32064ab7be37d02329fd8f9c",
+    "/pill-reminder/runtime.d2cab1d7425041f4.js": "e045d4ca14484b170c9bcf2ed2d578ab44e683c5",
+    "/pill-reminder/styles.a71425ebfefb8b49.css": "056c4d74e7b3c629b944f837429c7261d671b7b7"
   },
   "navigationUrls": [
     {
