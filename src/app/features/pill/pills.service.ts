@@ -52,6 +52,15 @@ export class PillsService {
     );
   }
 
+  exportData() {
+    return JSON.stringify(this.pillsTaked);
+  }
+
+  importData(pills: any) {
+    this.pillsTaked = pills;
+    this.savePills();
+  }
+
   private loadPills() {
     const savedPills =
       this.localStorageService.getItem(PILLS_STORAGE_KEY) || '[]';

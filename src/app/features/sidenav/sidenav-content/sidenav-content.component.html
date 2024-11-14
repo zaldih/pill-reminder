@@ -4,9 +4,7 @@
   </div>
 
   <div class="sidenav-content">
-    {{ "menus.section_under_construction" | transloco }}
-
-    <div style="margin-top: 62px">
+    <div style="text-align: center">
       <mat-form-field appearance="fill">
         <mat-label
           ><mat-icon>translate</mat-icon>
@@ -21,6 +19,15 @@
           <mat-option value="fr">French 🇫🇷</mat-option>
         </mat-select>
       </mat-form-field>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 8px">
+      <button mat-button (click)="exportData()">
+        <mat-icon>save</mat-icon> {{ "menus.export-data" | transloco }}
+      </button>
+      <button mat-button (click)="importData()">
+        <mat-icon>south_west</mat-icon> {{ "menus.import-data" | transloco }}
+      </button>
     </div>
   </div>
 </div>

@@ -9,17 +9,25 @@
   },
   "menus": {
     "section_under_construction": "Section under construction",
-    "language": "Language"
+    "language": "Language",
+    "export-data": "Export data",
+    "import-data": "Import data"
   },
   "pills": {
     "slide_start_message": "Slide to register\nthis moment!",
     "take_every": "Take every",
-    "last_pill": "Las pill",
+    "last_pill": "Last pill",
     "taked_at": "Taked at",
     "pill_taked": "Pill taked!",
     "can_take_other_at": "Can take other at",
     "comment": "Comment",
     "add_comment": "Add comment",
-    "edit_comment": "Edit comment"
+    "edit_comment": "Edit comment",
+    "import": {
+      "title_confirmation_modal": "Import data",
+      "message_confirmation_modal": "Are you sure you want to import new data?\nThe old data will be lost.",
+      "confirm": "Import",
+      "cancel": "Cancel"
+    }
   }
 }

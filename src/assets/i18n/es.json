@@ -8,7 +8,8 @@
     "show_more": "Mostrar más"
   },
   "menus": {
-    "section_under_construction": "Sección en construcción",
+    "export-data": "Exportar datos",
+    "import-data": "Importar datos",
     "language": "Idioma"
   },
   "pills": {
@@ -20,6 +21,12 @@
     "can_take_other_at": "Puedes tomar otra a las",
     "comment": "Comentario",
     "add_comment": "Añadir comentario",
-    "edit_comment": "Editar comentario"
+    "edit_comment": "Editar comentario",
+    "import": {
+      "title_confirmation_modal": "Importar datos",
+      "message_confirmation_modal": "¿Estás seguro de que quieres importar datos nuevos?\nLos antiguos se perderán.",
+      "confirm": "Importar",
+      "cancel": "Cancelar"
+    }
   }
 }
